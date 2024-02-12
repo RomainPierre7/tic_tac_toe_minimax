@@ -67,14 +67,9 @@ function isGameOver(){
 }
 
 reset.addEventListener('click', () => {
-    board = new Array(9).fill('');
-    current = 'X';
-    for (let i = 0; i < 9; i++) {
-        const box = document.getElementById(`${i}`);
-        box.innerHTML = '';
-    }
-    resultText.textContent = "";
-})
+    window.location.reload();
+});
+
 
 for (let i = 0; i < 9; i++) {
         const box = document.getElementById(`${i}`);
